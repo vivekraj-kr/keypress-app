@@ -5,6 +5,7 @@ const KeyboardShortcut = ({ className, combo, callback, description, children, t
 
   useEffect(() => {
     trackShortCutsInfo({ combo, description });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   useEffect(() => {
